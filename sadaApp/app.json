@@ -1,0 +1,50 @@
+{
+	"expo": {
+		"name": "sada-app",
+		"slug": "sada-app",
+		"version": "1.0.0",
+		"scheme": "sada-app-scheme",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#ffffff"
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"config": {
+				"usesNonExemptEncryption": false
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#ffffff"
+			},
+			"package": "com.harisshaikh.sadaapp"
+		},
+		"web": {
+			"favicon": "./assets/icon.png"
+		},
+		"plugins": [
+			"expo-router",
+			[
+				"expo-secure-store",
+				{
+					"faceIDPermission": "Allow this app to access your Face ID biometric data."
+				}
+			]
+		],
+		"extra": {
+			"router": {
+				"origin": false
+			},
+			"eas": {
+				"projectId": "0ce13a5d-9753-4719-9136-cef7b8c5e4bd"
+			}
+		}
+	}
+}
